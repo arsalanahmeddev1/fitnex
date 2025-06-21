@@ -1,0 +1,219 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-primary: 'Orbitron', sans-serif;
+    --font-secondary: 'Space Grotesk', sans-serif;
+    --primary-theme: #0079D4;
+    --text-black: #000;
+    --dim-white: #ffffff61;
+    --para-white: #ffffffc7;
+
+}
+
+/* global css */
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+.container {
+    @apply mx-auto px-[10px];
+}
+
+.primary-theme {
+    color: var(--primary-theme);
+}
+
+.bg-primary-theme {
+    background-color: var(--primary-theme);
+}
+.para-white {
+    color: var(--para-white);
+}
+/* global css end here */
+
+.border-bottom {
+    @apply border-b;
+    border-color: var(--dim-white);
+}
+
+.btn {
+    @apply px-[20px] py-[10px] rounded-[8px] font-bold;
+    font-family: var(--font-secondary);
+}
+
+.primary-btn {
+    @apply text-white;
+    background-color: var(--primary-theme);
+}
+
+.label-area {
+    @apply text-black py-[8px] px-[30px] rounded-[60px] font-bold;
+    font-family: var(--font-secondary);
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+.hero-banner {
+    /* background: url('/images/hero-banner.png') no-repeat center center; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @apply py-[200px];
+}
+
+.md-circle {
+    @apply w-[20px] h-[20px] rounded-full;
+}
+
+
+.slider-01 {
+    transform: rotate(4deg);
+}
+
+.slider-02 {
+    transform: rotate(-4deg);
+}
+
+/* Individual list items */
+.slider-01 li,
+.slider-02 li {
+    @apply flex items-center justify-between gap-x-[20px] uppercase font-bold;
+}
+
+.sec-hd {
+    @apply text-white text-[36px] font-bold uppercase;
+    color: var(--primary-theme);
+}
+.para {
+    @apply  text-[20px] font-medium;
+    font-family: var(--font-secondary);
+}
+.our-services-content {
+    @apply absolute top-0 left-0 w-full h-full flex items-center justify-center z-[3]; 
+}
+.our-services-item::before {
+    @apply absolute top-0 left-0 w-full h-full bg-[#00000040] z-[1];
+    content: '';
+}
+.rotate-text {
+    transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+.rotate-text h4 {
+    @apply font-bold;
+}
+.rotate-text h4:first-child {
+    @apply text-[24px];
+}
+.rotate-text h4:last-child {
+    @apply text-[36px];
+}
+.testi-content {
+    @apply bg-[#121212] px-[20px] py-[30px];
+}
+.stars i {
+    @apply text-[#FFD700] text-[23px];
+}
+.fitness-journey-slider .slick-slide,
+.testimonials-slider .slick-slide {
+    @apply px-[20px];
+}
+.label-field {
+    @apply text-white mb-[10px];
+}
+.input-field {
+    @apply bg-[#1A1A1A] rounded-[8px] p-[20px] w-full;
+    color: var(--para-white);
+}
+.field-wrap {
+    @apply flex flex-col;
+}
+.select-field {
+
+}
+.submit-btn {
+    @apply py-[20px] text-[20px] font-bold;
+    font-family: var(--font-secondary);
+}
+.footer-links li {
+    @apply mb-[10px];
+}
+.footer-links a {
+    @apply text-white;
+    font-family: var(--font-secondary);
+}
+.social-icons {
+    @apply flex gap-x-[10px];
+}
+.social-icons li {
+    @apply flex items-center justify-center w-[40px] h-[40px]  bg-white;
+}
+.social-icons li a {
+    @apply flex items-center justify-center;
+}
+.social-icons li i {
+    @apply text-[23px] text-black;
+}
+
+
+/* Optional: Reset scale for all other slides to avoid unintended scaling */
+.fitness-journey-slider .slick-slide img {
+    transform: scale(1);
+}
+.fitness-journey-slider .slick-center img {
+    transform: scale(1.5); /* Scale up the center image */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Slight scale for active slides, but only apply to the center one */
+.fitness-journey-slider .slick-active img {
+    transform: scale(1.1); /* Slight scale for active images */
+    transition: transform 0.3s ease-in-out;
+}
+/* .fitness-journey-slider .slick-slide img {
+    transform: scale(0.9);
+} */
+/* Keyframes for scrolling with rotation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%) rotate(0deg);
+        /* Start off to the right */
+    }
+
+    100% {
+        transform: translateX(-100%) rotate(0deg);
+        /* End off to the left with full rotation */
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%) rotate(0deg);
+        /* Start off to the right */
+    }
+
+    100% {
+        transform: translateX(100%) rotate(0deg);
+        /* End off to the left with full rotation */
+    }
+}
+
+/* Apply the animation to the slider */
+.slider-02 li {
+    animation: scroll-left 20s linear infinite;
+    /* Adjust duration (20s) as needed */
+}
+
+.slider-01 li {
+    animation: scroll-right 20s linear infinite;
+    /* Adjust duration (20s) as needed */
+}
