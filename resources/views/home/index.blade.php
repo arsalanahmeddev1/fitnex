@@ -32,22 +32,35 @@
             <div class="topbar text-end mb-[5px]">
                 <a href="" class="text-white font-secondary"><span class="pe-[10px] text-[#0079D4]"><i class="fa-solid fa-envelope"></i></span>youremailhere@.com</a>
             </div>
-            <div class="border-b border-bottom"></div>
-            <div class="grid grid-cols-2">
-                <div class="col-span-1">
+            <div class="border-b border-bottom mb-[10px]"></div>
+            <div class="grid grid-cols-3 items-center justify-between">
+                <div class="logo">
+                    <img src="{{ asset('images/logo.png') }}" alt="">
+                </div>
+                <div class="">
                     <nav>
-                        <ul class="flex font-secondary text-white justify-between">
+                        <ul class="flex primary-nav font-secondary text-white justify-between">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li>
+                                <select name="" id="">
+                                    <option value="" selected>Services</option>
+                                    <option value="">Services</option>
+                                    <option value="">Services</option>
+                                    <option value="">Services</option>
+                                    <option value="">Services</option>
+                                    <option value="">Services</option>
+                                    <option value="">Services</option>
+                                </select>
+                            </li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact us</a></li>
                         </ul>
                     </nav>
                 </div>
-                <!-- <div class="col-span-1">
+                <div class="text-end">
                     <a href="" class="btn primary-btn">Try for FREE</a>
-                </div> -->
+                </div>
             </div>
         </div>
     </header>
@@ -70,9 +83,9 @@
         </div>
     </section>
     <section class="custom-slider bg-black pt-[20px] pb-[100px]">
-        <ul class="slider-01 bg-white py-[10px] flex justify-between">
+        <ul class="slider-01 bg-white py-[10px]">
             <li class="">
-                <span class="text-white">Personal Training</span>
+                <span class="text-black">Personal Training</span>
                 <div class="md-circle bg-black"></div>
             </li>
             <li class="">
@@ -100,7 +113,7 @@
                 <div class="md-circle bg-black"></div>
             </li>
         </ul>
-        <ul class="slider-02 bg-primary-theme py-[10px] flex justify-between">
+        <ul class="slider-02 bg-primary-theme py-[10px] flex justify-between" dir="rtl">
             <li class="">
                 <span class="text-white">Nutrition Coaching</span>
                 <div class="md-circle bg-white"></div>
@@ -144,7 +157,7 @@
                 <div class="our-services-item relative">
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
-                        <h4 class="text-white text-[28px] font-bold">
+                        <h4 class="text-white text-[28px] font-bold text-center">
                             Personal Training
                         </h4>
                     </div>
@@ -154,7 +167,7 @@
                 <div class="our-services-item relative">
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
-                        <h4 class="text-white text-[28px] font-bold">
+                        <h4 class="text-white text-[28px] font-bold text-center">
                             Personal Training
                         </h4>
                     </div>
@@ -164,7 +177,7 @@
                 <div class="our-services-item relative">
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
-                        <h4 class="text-white text-[28px] font-bold">
+                        <h4 class="text-white text-[28px] font-bold text-center">
                             Personal Training
                         </h4>
                     </div>
@@ -174,7 +187,7 @@
                 <div class="our-services-item relative">
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
-                        <h4 class="text-white text-[28px] font-bold">
+                        <h4 class="text-white text-[28px] font-bold text-center">
                             Personal Training
                         </h4>
                     </div>
@@ -184,7 +197,7 @@
                 <div class="our-services-item relative">
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
-                        <h4 class="text-white text-[28px] font-bold">
+                        <h4 class="text-white text-[28px] font-bold text-center">
                             Personal Training
                         </h4>
                     </div>
@@ -274,7 +287,7 @@
         </div>
 
     </section>
-    <section class="expert-trainers-sec bg-black pb-[100px]" style="background: url('/images/expert-trainers-bg.png') no-repeat top/cover;">
+    <!-- <section class="expert-trainers-sec bg-black pb-[100px]" style="background: url('/images/expert-trainers-bg.png') no-repeat top/cover;">
         <div class="container">
             <h2 class="sec-hd text-center mb-[10px]">expert trainers</h2>
             <p class="para text-center max-w-[490px] mx-auto para-white mb-[30px]">
@@ -282,8 +295,89 @@
                 and passionate trainers at strong.
             </p>
         </div>
+    </section> -->
+
+    <div id="cursor-card" class="fixed top-0 left-0 w-64 bg-gray-800 text-white p-4 rounded-lg shadow-2xl pointer-events-none z-50 opacity-0 scale-0 transform-gpu" style="transform-origin: center center;">
+        <img id="cursor-card-img" src="" alt="" class="w-full h-40 object-cover rounded-t-lg">
+        <div class="p-4">
+            <h3 id="cursor-card-name" class="text-xl font-bold text-yellow-400"></h3>
+            <p id="cursor-card-specialty" class="text-sm text-gray-300"></p>
+        </div>
+    </div>
+    <section class="expert-trainers-sec relative bg-black py-[100px]">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://framerusercontent.com/images/A1Yi2CbcmDfGLrAKZpFKVI8A4.jpg');"></div>
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h3 class="font-bold uppercase text-[36px] primary-theme">expert trainers</h3>
+                <p class="para para-white max-w-[490px] mx-auto">Achieve your fitness goals with our experienced
+                    and passionate trainers at strong. </p>
+            </div>
+
+            <div class="">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-16 justify-items-center max-w-5xl mx-auto">
+                    <!-- replace all twitter icons with fa-brands fa-x-twitter -->
+
+                    <div class="trainer-card flex" data-name="Liam Daniel" data-specialty="Strength & Conditioning">
+                        <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
+                            <img src="https://framerusercontent.com/images/0cLxYA4WrWZauEbVxzvhnZnEeMA.jpg" class="w-full h-full object-cover object-top" alt="Liam Daniel">
+                            <div class="absolute top-5 left-5 flex flex-col space-y-2">
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotate">
+                        <h4>Liam Daniel</h4>
+                        <span>Gym Trainer</span>
+                    </div>
+                    <div class="trainer-card flex mt-[70px] mx-auto" data-name="William Garcia" data-specialty="CrossFit & HIIT">
+                        <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
+                            <img src="https://framerusercontent.com/images/CjTKhc1hqRGghfDwFauIOmxorlk.jpg" class="w-full h-full object-cover object-top" alt="William Garcia">
+                            <div class="absolute top-5 left-5 flex flex-col space-y-2">
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotate mt-[70px] mx-auto">
+                        <h4>Amelia Rose</h4>
+                        <span>Yoga Trainer</span>
+                    </div>
+
+                    <div class="trainer-card flex" data-name="Amelia Rose" data-specialty="Yoga & Flexibility">
+                        <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
+                            <img src="https://framerusercontent.com/images/BkUA7IDTw1F9XeejipAbrAOqMU.jpg" class="w-full h-full object-cover object-top" alt="Amelia Rose">
+                            <div class="absolute top-5 left-5 flex flex-col space-y-2">
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotate">
+                        <h4>William Garcia</h4>
+                        <span>Kickfit Trainer</span>
+                    </div>
+
+                    <div class="trainer-card flex items-center mt-[70px] mx-auto" data-name="Evelyn Clarke" data-specialty="Bodybuilding & Nutrition">
+                        <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
+                            <img src="https://framerusercontent.com/images/jzrHysSekMuteP7XfXiBXwbPvBI.png" class="w-full h-full object-cover object-top" alt="Evelyn Clarke">
+                            <div class="absolute top-5 left-5 flex flex-col space-y-2">
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotate mt-[70px] mx-auto">
+                        <h4>Evelyn Clarke</h4>
+                        <span>Group-X Trainer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="testimonials-sec bg-black pb-[100px]">
+    <section class="testimonials-sec bg-black py-[100px]">
         <div class="container">
             <h2 class="sec-hd text-center mb-[40px] max-w-[670px] mx-auto">
                 What people say
@@ -293,7 +387,7 @@
             <div class="testimonial-item">
                 <div class="flex">
                     <div class="w-full">
-                        <img src="{{ asset('images/testi-01.png') }}" class="w-full" alt="">
+                        <img src="{{ asset('images/testi-01.png') }}" class="w-full h-full object-cover" alt="">
                     </div>
                     <div class="testi-content">
                         <ul class="stars justify-between max-w-[190px] mb-[10px] flex items-center">
@@ -313,7 +407,7 @@
             <div class="testimonial-item">
                 <div class="flex">
                     <div class="w-full">
-                        <img src="{{ asset('images/testi-01.png') }}" class="w-full" alt="">
+                        <img src="{{ asset('images/testi-01.png') }}" class="w-full h-full object-cover" alt="">
                     </div>
                     <div class="testi-content">
                         <ul class="stars justify-between max-w-[190px] mb-[10px] flex items-center">
@@ -333,7 +427,7 @@
             <div class="testimonial-item">
                 <div class="flex">
                     <div class="w-full">
-                        <img src="{{ asset('images/testi-01.png') }}" class="w-full" alt="">
+                        <img src="{{ asset('images/testi-01.png') }}" class="w-full h-full object-cover" alt="">
                     </div>
                     <div class="testi-content">
                         <ul class="stars justify-between max-w-[190px] mb-[10px] flex items-center">
@@ -409,6 +503,9 @@
         <div class="container">
             <div class="grid grid-cols-5 pb-[50px]">
                 <div class="mx-auto col-span-2">
+                    <div class="footer-logo">
+                        <img src="{{ asset('images/logo.png') }}" alt="">
+                    </div>
                     <p class="para para-white">
                         Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We’re building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
                     </p>
@@ -424,7 +521,7 @@
                 <div class="mx-auto">
                     <h4 class="text-white font-secondary font-bold text-[20px] mb-[20px]">Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="#"><span class="pe-[10px] primary-theme"><i class="fa-solid fa-envelope"></i></span> youremailhere@gmail.com</a></li>
+                        <li><a href="mailto:youremailhere@gmail.com"><span class="pe-[10px] primary-theme"><i class="fa-solid fa-envelope"></i></span> youremailhere@gmail.com</a></li>
                         <li><a href="#"><span class="pe-[10px] primary-theme"><i class="fa-solid fa-location-dot"></i></span> 123 Main St, Anytown, USA</a></li>
                     </ul>
                 </div>
@@ -440,14 +537,15 @@
             </div>
             <div class="border-bottom mb-[30px]"></div>
             <p class="para para-white text-center font-secondary font-bold text-[20px]">
-                © Copyright 2024. All rights Reserved
+                © Copyright 2025. All rights Reserved
             </p>
         </div>
     </footer>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </html>
