@@ -73,9 +73,9 @@
     <section class="hero-banner" style="background: url('/images/hero-banner.png') no-repeat top/cover;">
         <div class="container">
             <div class="flex justify-center items-center flex-col text-center">
-                <div class="label-area">Trusted by 100k+ clients</div>
+                <div class="label-area c">Trusted by 100k+ clients</div>
                 <div>
-                    <h1 class="text-[50px] md:text-[70px] lg:text-[80px] xxl:text-[100px] text-white font-bold max-w-[650px]">
+                    <h1 class="text-[50px] md:text-[70px] lg:text-[80px] xxl:text-[100px] text-white font-bold leading-[1.1] max-w-[650px] k+pfr5Wx@I8MPO@UuY'2">
                         Find Your Perfect Fit with <span class="primary-theme">Fitnex</span>
                     </h1>
                     <p class="text-white font-secondary text-[20px] mb-[20px] max-w-[600px]">
