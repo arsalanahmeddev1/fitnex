@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="custom-slider bg-black pt-[20px] pb-[100px]">
+    <section class="custom-slider bg-black pt-[20px] pb-[100px] relative z-[1]">
         <ul class="slider-01 bg-white py-[10px]">
             <li class="">
                 <span class="text-black">Personal Training</span>

@@ -72,7 +72,17 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    @apply py-[80px] lg:py-[100px] xl:py-[150px] xxl:py-[200px];
+    @apply py-[80px] lg:py-[100px] xl:py-[150px] xxl:py-[200px] relative z-[1];
+}
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000059;
+    z-index: -1;
 }
 
 .md-circle {
