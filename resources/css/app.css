@@ -173,14 +173,31 @@ body {
     @apply bg-[#1A1A1A] rounded-[8px] p-[20px] w-full;
     color: var(--para-white);
     font-family: var(--font-secondary);
-
 }
 
 .field-wrap {
     @apply flex flex-col;
 }
 
-.select-field {}
+.select-field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @apply relative;
+}
+
+.select-field:focus {
+    outline: none;
+}
+
+.custom-select-wrapper .custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+}
 
 .submit-btn {
     @apply py-[20px] text-[20px] font-bold;
@@ -427,6 +444,7 @@ body {
         right: 378px;
     }
 }
+
 @media (max-width: 1280px) {
     .fitness-journey-slider .slick-next {
         right: 398px;

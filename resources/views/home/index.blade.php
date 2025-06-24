@@ -476,14 +476,17 @@
                                 </div>
                                 <div class="field-wrap col-span-2">
                                     <label class="label-field" for="">Sevices</label>
-                                    <select class="input-field select-field" name="" id="">
-                                        <option value="">Select Services</option>
-                                        <option value="">Select Services</option>
-                                        <option value="">Select Services</option>
-                                        <option value="">Select Services</option>
-                                        <option value="">Select Services</option>
-                                        <option value="">Select Services</option>
-                                    </select>
+                                    <div class="custom-select-wrapper relative">
+                                        <select class="input-field select-field" name="" id="">
+                                            <option value="">Select Services</option>
+                                            <option value="">Select Services</option>
+                                            <option value="">Select Services</option>
+                                            <option value="">Select Services</option>
+                                            <option value="">Select Services</option>
+                                            <option value="">Select Services</option>
+                                        </select>
+                                        <span class="custom-arrow"><i class="fas fa-chevron-down"></i></span>
+                                    </div>
                                 </div>
                                 <div class="col-span-2">
                                     <button class="btn primary-btn submit-btn w-full">Submit</button>
