@@ -94,21 +94,21 @@ body {
 
 .slider-01,
 .slider-02 {
-  /* width: max-content; */
-  margin: 0 auto;
-  position: relative;
-  left: 0;
-  right: 0;
-  transform-origin: center center;
-  position: absolute;
+    /* width: max-content; */
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    transform-origin: center center;
+    position: absolute;
 }
 
 .slider-01 {
-  transform:  rotate(4deg);
+    transform: rotate(4deg);
 }
 
 .slider-02 {
-  transform:  rotate(-4deg);
+    transform: rotate(-4deg);
 }
 
 
@@ -386,7 +386,50 @@ body {
     @apply text-black;
 }
 
+
+/* Ensure the next arrow is centered on the current active slide */
+.fitness-journey-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    right: 348px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Optional: Style the arrow to make it visible */
+.fitness-journey-slider .slick-next i {
+    color: white;
+    font-size: 19px;
+
+}
+
+/* Optional: Remove the previous arrow */
+.fitness-journey-slider .slick-prev {
+    display: none;
+}
+
+.fitness-journey-slider .slick-next:before {
+    content: '';
+}
+
 /* responsive */
+@media (max-width: 1440px) {
+    .fitness-journey-slider .slick-next {
+        right: 378px;
+    }
+}
+@media (max-width: 1280px) {
+    .fitness-journey-slider .slick-next {
+        right: 398px;
+    }
+}
+
 @media (max-width: 768px) {
 
     /* <---------mobile menu----------> */
@@ -428,7 +471,7 @@ body {
         box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     }
 
-   
+
 
     .primary-navs.active {
         transform: translateX(0);
