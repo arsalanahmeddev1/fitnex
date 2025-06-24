@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="custom-slider bg-black pt-[20px] pb-[100px] relative z-[1]">
+    <section class="custom-slider bg-black pt-[20px] pb-[150px] relative z-[1]">
         <ul class="slider-01 bg-white py-[10px]">
             <li class="">
                 <span class="text-black">Personal Training</span>
@@ -174,7 +174,7 @@
                     <img src="{{ asset('images/services-02.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
-                        Nutrition Coaching
+                            Nutrition Coaching
                         </h4>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                     <img src="{{ asset('images/services-03.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
-                        Sports Performance
+                            Sports Performance
                         </h4>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                     <img src="{{ asset('images/services-04.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
-                        Mental Wellness
+                            Mental Wellness
                         </h4>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                     <img src="{{ asset('images/services-05.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
-                        Custom Goal-Based Plans
+                            Custom Goal-Based Plans
                         </h4>
                     </div>
                 </div>

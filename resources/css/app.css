@@ -97,16 +97,18 @@ body {
   /* width: max-content; */
   margin: 0 auto;
   position: relative;
-  left: 50%;
+  left: 0;
+  right: 0;
   transform-origin: center center;
+  position: absolute;
 }
 
 .slider-01 {
-  transform: translateX(-50%) rotate(4deg);
+  transform:  rotate(4deg);
 }
 
 .slider-02 {
-  transform: translateX(-50%) rotate(-4deg);
+  transform:  rotate(-4deg);
 }
 
 
