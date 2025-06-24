@@ -92,13 +92,23 @@ body {
 }
 
 
+.slider-01,
+.slider-02 {
+  /* width: max-content; */
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform-origin: center center;
+}
+
 .slider-01 {
-    transform: rotate(4deg);
+  transform: translateX(-50%) rotate(4deg);
 }
 
 .slider-02 {
-    transform: rotate(-4deg);
+  transform: translateX(-50%) rotate(-4deg);
 }
+
 
 /* Individual list items */
 

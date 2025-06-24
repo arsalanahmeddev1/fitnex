@@ -53,7 +53,7 @@
                                     <option value="">Services</option>
                                     <option value="">Services</option>
                                     <option value="">Services</option>
-                                    <option value="">Servadices</option>
+                                    <option value="">Services</option>
                                 </select>
                             </li>
                             <li><a href="#">Blog</a></li>
