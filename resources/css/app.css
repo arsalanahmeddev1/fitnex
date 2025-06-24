@@ -166,11 +166,14 @@ body {
 
 .label-field {
     @apply text-white mb-[10px];
+    font-family: var(--font-secondary);
 }
 
 .input-field {
     @apply bg-[#1A1A1A] rounded-[8px] p-[20px] w-full;
     color: var(--para-white);
+    font-family: var(--font-secondary);
+
 }
 
 .field-wrap {
