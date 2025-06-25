@@ -1,5 +1,15 @@
 import './bootstrap';
 
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerWidth < 1025) {
+    AOS.init({
+      disable: true
+    });
+  } else {
+    AOS.init();
+  }
+});
+
 let navs = document.querySelector('.primary-navs')
 let menuIcon = document.querySelectorAll('.menu-toggle')
 console.log(navs, menuIcon);
@@ -79,7 +89,7 @@ $('.slider-01').slick({
   draggable: false,
   speed: 6000,
   cssEase: 'linear',
-  slidesToShow: 5,
+  slidesToShow: 7,
   slidesToScroll: 1,
   responsive: [
     {
@@ -113,7 +123,7 @@ $('.slider-02').slick({
   autoplaySpeed: 0,
   speed: 6000,
   cssEase: 'linear',
-  slidesToShow: 5,
+  slidesToShow: 7,
   rtl: true,
   responsive: [
     {
@@ -183,5 +193,49 @@ trainerCards.forEach(card => {
       ease: 'power3.in'
     });
   });
+});
+
+
+let count = document.querySelectorAll(".count")
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const item = entry.target;
+            const isKiloCounter = item.dataset.number === '100000';
+            const targetNumber = isKiloCounter ? 100 : parseInt(item.dataset.number, 10);
+            const initialText = item.innerText;
+            const prefix = initialText.match(/^[^\d]*/)?.[0] || '';
+            const suffix = isKiloCounter ? 'k' : '';
+
+            let startnumber = 0;
+            item.innerHTML = prefix + '0' + suffix;
+
+            const animationDuration = 2000; // 2 seconds
+            const stepDuration = 20;
+            const totalSteps = animationDuration / stepDuration;
+            const increment = targetNumber / totalSteps;
+
+            const counterup = () => {
+                startnumber += increment;
+
+                if (startnumber >= targetNumber) {
+                    item.innerHTML = prefix + targetNumber + suffix;
+                    clearInterval(stop);
+                } else {
+                    item.innerHTML = prefix + Math.ceil(startnumber) + suffix;
+                }
+            }
+
+            let stop = setInterval(counterup, stepDuration);
+            observer.unobserve(item);
+        }
+    });
+}, {
+    threshold: 0.25
+});
+
+count.forEach(item => {
+    observer.observe(item);
 });
 

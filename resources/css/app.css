@@ -125,8 +125,18 @@ body {
     font-family: var(--font-secondary);
 }
 
+.our-services-item {
+    @apply relative overflow-hidden;
+}
+
 .our-services-content {
     @apply absolute top-0 left-0 w-full h-full flex items-center justify-center z-[3];
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.our-services-item:hover .our-services-content {
+    transform: translateY(0);
 }
 
 .our-services-item::before {
@@ -437,7 +447,21 @@ body {
 .fitness-journey-slider .slick-next:before {
     content: '';
 }
-
+.primary-btn {
+    @apply border border-transparent;
+}
+.primary-btn:hover {
+    @apply bg-transparent border border-white transition-all duration-300;
+}
+.social-icons li {
+    @apply border border-transparent;
+}
+.social-icons li:hover {
+    @apply bg-transparent border border-white transition-all duration-300;
+}
+.social-icons li:hover i {
+    @apply text-white;
+}
 /* responsive */
 @media (max-width: 1440px) {
     .fitness-journey-slider .slick-next {

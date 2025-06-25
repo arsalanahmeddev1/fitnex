@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Styles / Scripts -->
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -28,9 +29,11 @@
 
 <body>
     <header class="header bg-black py-[10px]">
-        <div class="container">
+        <div class="container" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
             <div class="topbar text-end mb-[5px]">
-                <a href="" class="text-white font-secondary"><span class="pe-[10px] text-[#0079D4]"><i class="fa-solid fa-envelope"></i></span>youremailhere@.com</a>
+                <a href="#" class="text-white font-secondary "><span class="pe-[10px] text-[#0079D4]"><i class="fa-solid fa-envelope"></i></span>youremailhere@.com</a>
             </div>
             <div class="border-b border-bottom mb-[10px]"></div>
             <div class="grid grid-cols-4 lg:grid-cols-3 items-center justify-between">
@@ -62,7 +65,7 @@
                     </nav>
                 </div>
                 <div class="text-end">
-                    <a href="" class="btn primary-btn">Try for FREE</a>
+                    <a href="" class="btn primary-btn border border-transparent">Try for FREE</a>
                 </div>
                 <div class="menu-icon flex justify-end">
                     <i class="fa-solid fa-bars menu-toggle"></i>
@@ -73,23 +76,37 @@
     <section class="hero-banner" style="background: url('/images/hero-banner.png') no-repeat top/cover;">
         <div class="container">
             <div class="flex justify-center items-center flex-col text-center">
-                <div class="label-area c">Trusted by 100k+ clients</div>
+                <div class="label-area c" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Trusted by 100k+ clients</div>
                 <div>
-                    <h1 class="text-[50px] md:text-[70px] lg:text-[80px] xxl:text-[100px] text-white font-bold leading-[1.1] max-w-[650px] k+pfr5Wx@I8MPO@UuY'2">
-                        Find Your Perfect Fit with <span class="primary-theme">Fitnex</span>
+                    <h1 class="relative text-[50px] md:text-[70px] lg:text-[80px] xxl:text-[100px] text-white font-bold leading-[1.1] max-w-[650px] k+pfr5Wx@I8MPO@UuY'2"
+                        data-aos="flip-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        Find Your Perfect Fit with <div class="banner-logo absolute bottom-0 right-0"><img src="{{ asset('images/logo.png') }}" class="min-w-[180px]" alt=""></div>
                     </h1>
-                    <p class="text-white font-secondary text-[20px] mb-[20px] max-w-[600px]">
+
+                    <p class="text-white font-secondary text-[20px] mb-[20px] max-w-[600px]" data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         Connect with top wellness professionals—from fitness trainers to nutritionists—all in one place.
                     </p>
-                    <div class="flex justify-center">
-                        <a href="" class="btn primary-btn">Join as a Coach <span class="ps-[10px]"><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <div class="flex justify-center" data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <a href="" class="btn primary-btn border border-transparent">Join as a Coach <span class="ps-[10px]"><i class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="custom-slider bg-black pt-[20px] pb-[150px] relative z-[1]">
-        <ul class="slider-01 bg-white py-[10px]">
+    <section class="custom-slider bg-black pb-[150px] relative z-[1]">
+        <ul class="slider-01 bg-white py-[15px]">
+            <li class="">
+                <span class="text-black">Personal Training</span>
+                <div class="md-circle bg-black"></div>
+            </li>
             <li class="">
                 <span class="text-black">Personal Training</span>
                 <div class="md-circle bg-black"></div>
@@ -119,7 +136,11 @@
                 <div class="md-circle bg-black"></div>
             </li>
         </ul>
-        <ul class="slider-02 bg-primary-theme py-[10px] flex justify-between" dir="rtl">
+        <ul class="slider-02 bg-primary-theme py-[15px] flex justify-between" dir="rtl">
+            <li class="">
+                <span class="text-white">Nutrition Coaching</span>
+                <div class="md-circle bg-white"></div>
+            </li>
             <li class="">
                 <span class="text-white">Nutrition Coaching</span>
                 <div class="md-circle bg-white"></div>
@@ -152,15 +173,24 @@
     </section>
     <section class="our-services bg-black">
         <div class="container">
-            <h2 class="sec-hd text-center mb-[10px]">our services</h2>
-            <p class="para text-center max-w-[490px] mx-auto para-white mb-[30px]">
+            <h2 class="sec-hd text-center mb-[10px]"
+                data-aos="flip-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">our services</h2>
+            <p class="para text-center max-w-[490px] mx-auto para-white mb-[30px]"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                 Strong offers 5 popular services to help you make
                 comfortable choices that suit your needs.
             </p>
         </div>
         <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-5 gap-y-[20px]">
             <div>
-                <div class="our-services-item relative">
+                <div class="our-services-item relative"
+                    data-aos="flip-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -170,7 +200,10 @@
                 </div>
             </div>
             <div>
-                <div class="our-services-item relative">
+                <div class="our-services-item relative"
+                    data-aos="flip-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img src="{{ asset('images/services-02.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -180,7 +213,10 @@
                 </div>
             </div>
             <div>
-                <div class="our-services-item relative">
+                <div class="our-services-item relative"
+                    data-aos="flip-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img src="{{ asset('images/services-03.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -190,7 +226,10 @@
                 </div>
             </div>
             <div>
-                <div class="our-services-item relative">
+                <div class="our-services-item relative"
+                    data-aos="flip-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img src="{{ asset('images/services-04.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -200,7 +239,9 @@
                 </div>
             </div>
             <div>
-                <div class="our-services-item relative">
+                <div class="our-services-item relative" data-aos="flip-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img src="{{ asset('images/services-05.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -213,17 +254,26 @@
     </section>
     <section class="fitness-journey bg-black py-[50px] md:py-[100px]">
         <div class="container">
-            <h2 class="sec-hd text-center mb-[10px] max-w-[670px] mx-auto">
+            <h2 class="sec-hd text-center mb-[10px] max-w-[670px] mx-auto"
+                data-aos="flip-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                 let’s us Transform Your
                 Fitness Journey
             </h2>
-            <p class="para text-center max-w-[490px] mx-auto para-white mb-[80px]">
+            <p class="para text-center max-w-[490px] mx-auto para-white mb-[80px]"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                 10 years of experience in the fitness industry and trusted by over 100.000 customers.
             </p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 justify-between items-center max-w-[1000px] mx-auto mb-[40px]">
+        <div class="grid grid-cols-2 md:grid-cols-4 justify-between items-center max-w-[1000px] mx-auto mb-[40px]"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
             <div class="text-center">
-                <h4 class="text-[48px] font-bold primary-theme">
+                <h4 class="text-[48px] font-bold primary-theme count" data-number="100000">
                     +100k
                 </h4>
                 <p class="text-white font-secondary text-[20px]">
@@ -231,7 +281,7 @@
                 </p>
             </div>
             <div class="text-center">
-                <h4 class="text-[48px] font-bold primary-theme">
+                <h4 class="text-[48px] font-bold primary-theme count" data-number="80">
                     80
                 </h4>
                 <p class="text-white font-secondary text-[20px]">
@@ -239,7 +289,7 @@
                 </p>
             </div>
             <div class="text-center">
-                <h4 class="text-[48px] font-bold primary-theme">
+                <h4 class="text-[48px] font-bold primary-theme count" data-number="8">
                     8
                 </h4>
                 <p class="text-white font-secondary text-[20px]">
@@ -247,7 +297,7 @@
                 </p>
             </div>
             <div class="text-center">
-                <h4 class="text-[48px] font-bold primary-theme">
+                <h4 class="text-[48px] font-bold primary-theme count" data-number="10">
                     10
                 </h4>
                 <p class="text-white font-secondary text-[20px]">
@@ -265,19 +315,14 @@
             <div>
                 <img src="{{ asset('images/journey-03.png') }}" class="w-full h-full object-cover" alt="">
             </div>
-            <!-- <div>
-                <img src="{{ asset('images/journey-01.png') }}" alt="">
-            </div>
-            <div>
-                <img src="{{ asset('images/journey-02.png') }}" alt="">
-            </div> -->
-
         </div>
     </section>
     <section class="about-sec bg-black pb-[50px] md:pb-[100px]">
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-[30px]">
-                <div class="text-center md:text-start">
+                <div class="text-center md:text-start" data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <h3 class="primary-theme text-[36px] font-bold mb-[20px]">About Fitnex</h3>
                     <p class="para para-white mb-[10px]">
                         Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We’re building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
@@ -286,7 +331,10 @@
                         <a href="" class="btn primary-btn">Leann More</a>
                     </div>
                 </div>
-                <div>
+                <div
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img src="{{ asset('images/about-sec-right.png') }}" alt="">
                 </div>
             </div>
@@ -307,8 +355,14 @@
 
         <div class="container mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
-                <h3 class="font-bold uppercase text-[36px] primary-theme">expert trainers</h3>
-                <p class="para para-white max-w-[490px] mx-auto">Achieve your fitness goals with our experienced
+                <h3 class="font-bold uppercase text-[36px] primary-theme"
+                    data-aos="flip-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">expert trainers</h3>
+                <p class="para para-white max-w-[490px] mx-auto"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Achieve your fitness goals with our experienced
                     and passionate trainers at strong. </p>
             </div>
 
@@ -316,7 +370,10 @@
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-16 justify-items-center max-w-5xl mx-auto">
                     <!-- replace all twitter icons with fa-brands fa-x-twitter -->
 
-                    <div class="trainer-card flex" data-title="Gym Trainer" data-description="Personalized workout plans and strength training sessions tailored to your fitness goals, whether you're a beginner or advanced." data-price="Price: $40">
+                    <div class="trainer-card flex" data-title="Gym Trainer" data-description="Personalized workout plans and strength training sessions tailored to your fitness goals, whether you're a beginner or advanced." data-price="Price: $40"
+                        data-aos="flip-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
                             <img src="{{ asset('images/expert-trainers-01.png') }}" class="w-full h-full object-cover object-top" alt="Liam Daniel">
                             <div class="absolute top-5 left-5 flex flex-col space-y-2">
@@ -329,7 +386,10 @@
                         <h4>Liam Daniel</h4>
                         <span>Gym Trainer</span>
                     </div>
-                    <div class="trainer-card flex mt-[70px] mx-auto" data-title="Yoga Trainer" data-description="Guided yoga sessions focusing on flexibility, mindfulness, and relaxation for all skill levels, from beginners to experienced yogis." data-price="Price: $35">
+                    <div class="trainer-card flex mt-[70px] mx-auto" data-title="Yoga Trainer" data-description="Guided yoga sessions focusing on flexibility, mindfulness, and relaxation for all skill levels, from beginners to experienced yogis." data-price="Price: $35"
+                        data-aos="flip-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
                             <img src="{{ asset('images/expert-trainers-02.png') }}" class="w-full h-full object-cover object-top" alt="William Garcia">
                             <div class="absolute top-5 left-5 flex flex-col space-y-2">
@@ -338,12 +398,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-rotate mt-[70px] mx-auto">
+                    <div class="text-rotate mt-[70px] mx-auto"
+                        data-aos="flip-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <h4>Amelia Rose</h4>
                         <span>Yoga Trainer</span>
                     </div>
 
-                    <div class="trainer-card flex" data-title="Kickfit Trainer" data-description="High-energy kickboxing fitness classes designed to boost your cardio, coordination, and strength while burning calories." data-price="Price: $45">
+                    <div class="trainer-card flex" data-title="Kickfit Trainer" data-description="High-energy kickboxing fitness classes designed to boost your cardio, coordination, and strength while burning calories." data-price="Price: $45"
+                        data-aos="flip-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
                             <img src="{{ asset('images/expert-trainers-03.png') }}" class="w-full h-full object-cover object-top" alt="Amelia Rose">
                             <div class="absolute top-5 left-5 flex flex-col space-y-2">
@@ -352,12 +418,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-rotate">
+                    <div class="text-rotate"
+                        data-aos="flip-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <h4>William Garcia</h4>
                         <span>Kickfit Trainer</span>
                     </div>
 
-                    <div class="trainer-card flex items-center mt-[70px] mx-auto" data-title="Group-X Trainer" data-description="Motivating group exercise classes including aerobics, dance, and functional training to keep you energized and socially connected." data-price="Price: $30">
+                    <div class="trainer-card flex items-center mt-[70px] mx-auto" data-title="Group-X Trainer" data-description="Motivating group exercise classes including aerobics, dance, and functional training to keep you energized and socially connected." data-price="Price: $30"
+                        data-aos="flip-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
                             <img src="{{ asset('images/expert-trainers-04.png') }}" class="w-full h-full object-cover object-top" alt="Evelyn Clarke">
                             <div class="absolute top-5 left-5 flex flex-col space-y-2">
@@ -376,7 +448,10 @@
     </section>
     <section class="testimonials-sec bg-black py-[50px] md:py-[100px]">
         <div class="container">
-            <h2 class="sec-hd text-center mb-[40px] max-w-[670px] mx-auto">
+            <h2 class="sec-hd text-center mb-[40px] max-w-[670px] mx-auto"
+                data-aos="flip-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                 What people say
             </h2>
         </div>
@@ -447,7 +522,10 @@
         <div class="container">
             <div class="bg-black py-[100px] px-[10px] lg:px-[150px]">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
-                    <div class="max-w-[500px]">
+                    <div class="max-w-[500px]"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <h3 class="sec-hd mb-[10px]">
                             free 7-day trial
                             signup
@@ -459,7 +537,9 @@
                         </p>
                         <div class="border-b border-bottom"></div>
                     </div>
-                    <div>
+                    <div data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <form action="">
                             <div class="grid grid-cols-2 gap-[20px]">
                                 <div class="field-wrap">
@@ -501,7 +581,11 @@
     </section>
     <footer class="footer-sec bg-black pt-[50px] md:pt-[150px] pb-[30px]">
         <div class="container">
-            <div class="md:grid flex gap-y-[20px] justify-start flex-col md:grid-cols-5 pb-[50px]">
+            <div class="md:grid flex gap-y-[20px] justify-start flex-col md:grid-cols-5 pb-[50px]" 
+            data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+            >
                 <div class="mx-auto col-span-2">
                     <div class="footer-logo">
                         <img src="{{ asset('images/logo.png') }}" alt="">
@@ -546,6 +630,7 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </html>
