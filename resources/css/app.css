@@ -91,39 +91,12 @@ body {
     @apply w-[20px] h-[20px] rounded-full;
 }
 
-
-.slider-01,
-.slider-02 {
-    /* width: max-content; */
-    margin: 0 auto;
-    position: relative;
-    left: 0;
-    right: 0;
-    transform-origin: center center;
-    position: absolute;
-}
-
-.slider-01 {
-    transform: rotate(4deg);
-}
-
-.slider-02 {
-    transform: rotate(-4deg);
-}
-
-
-/* Individual list items */
-
-
-.sec-hd {
-    @apply text-white text-[36px] font-bold uppercase;
-    color: var(--primary-theme);
-}
-
 .para {
     @apply text-[20px] font-medium;
     font-family: var(--font-secondary);
 }
+
+
 
 .our-services-item {
     @apply relative overflow-hidden;
@@ -238,9 +211,6 @@ body {
 .social-icons li i {
     @apply text-[23px] text-black;
 }
-
-
-
 
 /* Slight scale for active slides, but only apply to the center one */
 .fitness-journey-slider .slick-current.slick-active.slick-center img {
@@ -416,7 +386,6 @@ body {
     @apply text-black;
 }
 
-
 /* Ensure the next arrow is centered on the current active slide */
 .fitness-journey-slider .slick-next {
     position: absolute;
@@ -476,7 +445,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
     /* <---------mobile menu----------> */
     .close-icon i,
     .menu-icon i {
@@ -516,8 +484,6 @@ body {
         box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     }
 
-
-
     .primary-navs.active {
         transform: translateX(0);
         background-color: #000;
@@ -525,4 +491,24 @@ body {
         overflow: auto;
         height: 100%;
     }
+}
+
+.slider-01,
+.slider-02 {
+    /* width: max-content; */
+    position: relative;
+    margin: 0 auto;
+    left: -10%;
+    right: 0;
+    transform-origin: center center;
+    position: absolute;
+    width: 120%;
+}
+
+.slider-01 {
+    transform: rotate(4deg);
+}
+
+.slider-02 {
+    transform: rotate(-4deg);
 }

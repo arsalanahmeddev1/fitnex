@@ -102,7 +102,7 @@
         </div>
     </section>
     <section class="custom-slider bg-black pb-[150px] relative z-[1]">
-        <ul class="slider-01 bg-white py-[15px]">
+        <ul class="slider-01 bg-white py-[30px]">
             <li class="">
                 <span class="text-black">Personal Training</span>
                 <div class="md-circle bg-black"></div>
@@ -136,7 +136,7 @@
                 <div class="md-circle bg-black"></div>
             </li>
         </ul>
-        <ul class="slider-02 bg-primary-theme py-[15px] flex justify-between" dir="rtl">
+        <ul class="slider-02 bg-primary-theme py-[30px] flex justify-between" dir="rtl">
             <li class="">
                 <span class="text-white">Nutrition Coaching</span>
                 <div class="md-circle bg-white"></div>
