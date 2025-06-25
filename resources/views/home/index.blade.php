@@ -188,9 +188,10 @@
         <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-5 gap-y-[20px]">
             <div>
                 <div class="our-services-item relative"
-                    data-aos="flip-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="400"
+                    >
                     <img src="{{ asset('images/services-01.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -201,9 +202,9 @@
             </div>
             <div>
                 <div class="our-services-item relative"
-                    data-aos="flip-right"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="500">
                     <img src="{{ asset('images/services-02.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -214,9 +215,9 @@
             </div>
             <div>
                 <div class="our-services-item relative"
-                    data-aos="flip-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="600">
                     <img src="{{ asset('images/services-03.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -227,9 +228,9 @@
             </div>
             <div>
                 <div class="our-services-item relative"
-                    data-aos="flip-right"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="700">
                     <img src="{{ asset('images/services-04.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -239,9 +240,9 @@
                 </div>
             </div>
             <div>
-                <div class="our-services-item relative" data-aos="flip-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">
+                <div class="our-services-item relative" data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="800">
                     <img src="{{ asset('images/services-05.png') }}" class="relative z-[1]" alt="">
                     <div class="our-services-content">
                         <h4 class="">
@@ -258,7 +259,7 @@
                 data-aos="flip-right"
                 data-aos-easing="linear"
                 data-aos-duration="1500">
-                let’s us Transform Your
+                let's us Transform Your
                 Fitness Journey
             </h2>
             <p class="para text-center max-w-[490px] mx-auto para-white mb-[80px]"
@@ -325,7 +326,7 @@
                     data-aos-duration="1500">
                     <h3 class="primary-theme text-[36px] font-bold mb-[20px]">About Fitnex</h3>
                     <p class="para para-white mb-[10px]">
-                        Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We’re building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
+                        Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We're building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
                     </p>
                     <div class="flex justify-center md:justify-start">
                         <a href="" class="btn primary-btn">Leann More</a>
@@ -591,7 +592,7 @@
                         <img src="{{ asset('images/logo.png') }}" alt="">
                     </div>
                     <p class="para para-white">
-                        Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We’re building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
+                        Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We're building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
                     </p>
                 </div>
                 <div class="md:mx-auto">

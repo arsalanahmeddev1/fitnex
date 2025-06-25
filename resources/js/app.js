@@ -89,7 +89,7 @@ $('.slider-01').slick({
   draggable: false,
   speed: 6000,
   cssEase: 'linear',
-  slidesToShow: 7,
+  slidesToShow: 6,
   slidesToScroll: 1,
   responsive: [
     {
@@ -98,19 +98,20 @@ $('.slider-01').slick({
         slidesToShow: 3,
       }
     },
+
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
       }
     },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
+   
   ]
 });
 $('.slider-02').slick({
@@ -123,7 +124,7 @@ $('.slider-02').slick({
   autoplaySpeed: 0,
   speed: 6000,
   cssEase: 'linear',
-  slidesToShow: 7,
+  slidesToShow: 6,
   rtl: true,
   responsive: [
     {
@@ -132,18 +133,20 @@ $('.slider-02').slick({
         slidesToShow: 3,
       }
     },
+
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
       }
     },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-      }
-    }
+   
   ]
 });
 
