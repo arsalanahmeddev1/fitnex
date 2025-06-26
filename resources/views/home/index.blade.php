@@ -80,15 +80,14 @@
                     data-aos-easing="linear"
                     data-aos-duration="1500">Trusted by 100k+ clients</div>
                 <div>
-                    <h1 class="relative text-[50px] md:text-[70px] lg:text-[80px] xxl:text-[100px] text-white font-bold leading-[1.1] max-w-[650px] k+pfr5Wx@I8MPO@UuY'2"
+                    <h1 class="relative text-[50px] md:text-[70px] lg:text-[80px] xxl:text-[100px] text-white font-bold leading-[1.1] lg:max-w-[680px] xxl:max-w-[860px] k+pfr5Wx@I8MPO@UuY'2"
                         data-aos="flip-right"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
-                        Find Your Perfect Fit with <div class="banner-logo  absolute right-[22px] bottom-[10px] sm:right-[110px] md:right-[-138px] lg:bottom-[20px] lg:right-[-70px]">
-                            <img src="{{ asset('images/logo-lg.png') }}" class="max-w-[94px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[244px]" alt=""></div>
+                        Find Your Perfect Fit with <span class="italic uppercase font-black"><span class="primary-theme">FIT</span>NEX</span>
                     </h1>
 
-                    <p class="text-white font-secondary text-[20px] mb-[20px] max-w-[600px]" data-aos="fade-right"
+                    <p class="text-white font-secondary  text-[20px] mx-auto mb-[20px] max-w-[600px]" data-aos="fade-right"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
                         Connect with top wellness professionals—from fitness trainers to nutritionists—all in one place.
