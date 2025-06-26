@@ -431,6 +431,10 @@ body {
 .social-icons li:hover i {
     @apply text-white;
 }
+.sec-hd {
+    @apply text-[36px] font-black mb-[20px] uppercase;
+    color: var(--primary-theme);
+}
 /* responsive */
 @media (max-width: 1440px) {
     .fitness-journey-slider .slick-next {

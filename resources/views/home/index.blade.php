@@ -84,7 +84,8 @@
                         data-aos="flip-right"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
-                        Find Your Perfect Fit with <div class="banner-logo absolute bottom-[20px] right-[-70px]"><img src="{{ asset('images/logo-lg.png') }}" class="max-w-[244px]" alt=""></div>
+                        Find Your Perfect Fit with <div class="banner-logo  absolute right-[22px] bottom-[10px] sm:right-[110px] md:right-[-138px] lg:bottom-[20px] lg:right-[-70px]">
+                            <img src="{{ asset('images/logo-lg.png') }}" class="max-w-[94px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[244px]" alt=""></div>
                     </h1>
 
                     <p class="text-white font-secondary text-[20px] mb-[20px] max-w-[600px]" data-aos="fade-right"
@@ -324,7 +325,7 @@
                 <div class="text-center md:text-start" data-aos="fade-right"
                     data-aos-easing="linear"
                     data-aos-duration="1500">
-                    <h3 class="primary-theme text-[36px] font-bold mb-[20px]">About Fitnex</h3>
+                    <h3 class="sec-hd mb-[20px]">About Fitnex</h3>
                     <p class="para para-white mb-[10px]">
                         Fitnex was born from a passion for fitness and the frustration of navigating a fragmented wellness industry. We're building an inclusive ecosystem that connects clients with expert coaches, streamlining the journey to better health, performance, and confidence.
                     </p>
@@ -356,7 +357,7 @@
 
         <div class="container mx-auto px-4 relative z-10">
             <div class="text-center mb-12">
-                <h3 class="font-bold uppercase text-[36px] primary-theme"
+                <h3 class="sec-hd"
                     data-aos="flip-right"
                     data-aos-easing="linear"
                     data-aos-duration="1500">expert trainers</h3>
@@ -527,11 +528,11 @@
                         data-aos="fade-right"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
-                        <h3 class="sec-hd mb-[10px]">
+                        <h3 class="sec-hd text-center md:text-start mb-[10px]">
                             free 7-day trial
                             signup
                         </h3>
-                        <p class="para para-white max-w-[400px] mb-[40px]">
+                        <p class="para para-white max-w-[400px] mb-[40px] text-center md:text-start">
                             Sign up for free 7-day trial with us and
                             experience all of our services for free at
                             Fitnex.
