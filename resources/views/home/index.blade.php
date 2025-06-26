@@ -84,7 +84,7 @@
                         data-aos="flip-right"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
-                        Find Your Perfect Fit with <div class="banner-logo absolute bottom-0 right-0"><img src="{{ asset('images/logo.png') }}" class="min-w-[180px]" alt=""></div>
+                        Find Your Perfect Fit with <div class="banner-logo absolute bottom-[20px] right-[-70px]"><img src="{{ asset('images/logo-lg.png') }}" class="max-w-[244px]" alt=""></div>
                     </h1>
 
                     <p class="text-white font-secondary text-[20px] mb-[20px] max-w-[600px]" data-aos="fade-right"
