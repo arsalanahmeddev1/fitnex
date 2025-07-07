@@ -193,7 +193,7 @@
                             <!-- Payment Methods Image -->
                            {{--  @if($package->price != 0)
                             <div class="col-12 text-end">
-                                <img src="{{ asset('public/assets/website/images/stripe_secure.png') }}" alt="Pay-methods" class="img-fluid" style="width:140px;">
+                                <img src="{{ asset('/assets/website/images/stripe_secure.png') }}" alt="Pay-methods" class="img-fluid" style="width:140px;">
                             </div>
                             @endif --}}
                             <!-- Submit Button -->

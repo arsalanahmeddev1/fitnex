@@ -41,7 +41,7 @@
                         <p>{!! $product->description !!}</p>
                         <!--<div class="ranking">-->
                         <!--    <span>4.92</span>  -->
-                        <!--    <img src="{{ asset('public/assets/website/images/testimonials-single-star.png') }}" alt="">-->
+                        <!--    <img src="{{ asset('/assets/website/images/testimonials-single-star.png') }}" alt="">-->
                         <!--    <p>(73 tip)</p>-->
                         <!--</div>-->
                         @if($product->category_slug != 'property')
@@ -78,7 +78,7 @@
                             </div>
                             <div class="labeledBadge">
                                 <div class="value-icon">
-                                    <img src="{{ asset('public/assets/website/images/washrooms-img.png') }}" title="Bathroom" alt="">
+                                    <img src="{{ asset('/assets/website/images/washrooms-img.png') }}" title="Bathroom" alt="">
                                     <span>{{ $product->hasProductDetails->bathrooms }} Bathrooms</span>
                                 </div>   
                                 <div class="value-icon">
@@ -89,10 +89,10 @@
                     </div>
                     <div class="hosted">
                         <h6>HOSTED BY</h6>
-                        <img src="{{ asset('public/assets/website/images/chef-logo.png') }}" alt="">
+                        <img src="{{ asset('/assets/website/images/chef-logo.png') }}" alt="">
                         <!--<div class="hosted-rank">-->
                         <!--    <span>4.9-->
-                        <!--        <a href=""> <img src="{{ asset('public/assets/website/images/testimonials-single-star.png') }}" alt=""> </a></span>-->
+                        <!--        <a href=""> <img src="{{ asset('/assets/website/images/testimonials-single-star.png') }}" alt=""> </a></span>-->
                         <!--</div>-->
                         <div class="hosted-info">
                             <h3>Susanna</h3>

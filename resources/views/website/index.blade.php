@@ -136,7 +136,7 @@
                 data-aos-duration="600"
                 data-aos-delay="{{ $loop->index * 100 }}"
                 >
-                <img src="{{ asset('public/admin/assets/images/services/'.$category->image) }}" class="relative z-[1] h-full w-auto mx-auto" alt="">
+                <img src="{{ asset('/admin/assets/images/services/'.$category->image) }}" class="relative z-[1] h-full w-auto mx-auto" alt="">
                 <div class="our-services-content">
                     <h4 class="">
                         {{ $category->title }}
@@ -195,13 +195,13 @@
     </div>
     <div class="fitness-journey-slider">
         <div>
-            <img src="{{ asset('public/assets/website/images/journey-01.png') }}" class="w-full h-full object-cover" alt="">
+            <img src="{{ asset('/assets/website/images/journey-01.png') }}" class="w-full h-full object-cover" alt="">
         </div>
         <div>
-            <img src="{{ asset('public/assets/website/images/journey-02.png') }}" class="w-full h-full object-cover" alt="">
+            <img src="{{ asset('/assets/website/images/journey-02.png') }}" class="w-full h-full object-cover" alt="">
         </div>
         <div>
-            <img src="{{ asset('public/assets/website/images/journey-03.png') }}" class="w-full h-full object-cover" alt="">
+            <img src="{{ asset('/assets/website/images/journey-03.png') }}" class="w-full h-full object-cover" alt="">
         </div>
     </div>
 </section>
@@ -227,7 +227,7 @@
                 @if(isset($home_page_data['home_about_image']) && $home_page_data['home_about_image'] != '')
                     <img src="{{ asset('/public/admin/assets/images/page/'.$home_page_data['home_about_image']) }}" class="" alt="">
                 @else
-                    <img src="{{ asset('public/assets/website/images/about-sec-right.png') }}" class="" alt="">
+                    <img src="{{ asset('/assets/website/images/about-sec-right.png') }}" class="" alt="">
                 @endif
             </div>
         </div>
@@ -271,9 +271,9 @@
                     data-aos-duration="1500">
                     <div class="relative overflow-hidden rounded-lg h-[450px] w-[300px] flex-shrink-0">
                         @if($trainer->image)
-                            <img src="{{ asset('public/admin/assets/images/trainers/'.$trainer->image ) }}" class="w-full h-full object-cover object-top" alt="{{ $trainer->name }}">
+                            <img src="{{ asset('/admin/assets/images/trainers/'.$trainer->image ) }}" class="w-full h-full object-cover object-top" alt="{{ $trainer->name }}">
                         @else
-                            <img src="{{ asset('public/admin/assets/images/trainers/no-photo1.jpg') }}" class="w-full h-full object-cover object-top" alt="{{ $trainer->name }}">
+                            <img src="{{ asset('/admin/assets/images/trainers/no-photo1.jpg') }}" class="w-full h-full object-cover object-top" alt="{{ $trainer->name }}">
                         @endif
                         <div class="absolute top-5 left-5 flex flex-col space-y-2 social-media-links">
                             <a href="{{ $trainer->twitter }}" class="bg-white text-black w-8 h-8 rounded-md flex justify-center items-center no-underline transition-all duration-300 expoert-traning-card hover:text-white hover:scale-110"><i class="fab fa-x-twitter"></i></a>
@@ -310,9 +310,9 @@
             <div class="flex flex-col md:flex-row">
                 <div class="w-full">
                     @if($testimonial->image)
-                        <img src="{{ asset('public/admin/assets/images/testimonials/'.$testimonial->image) }}" class="w-full h-full object-cover" alt="{{ $testimonial->name }}">
+                        <img src="{{ asset('/admin/assets/images/testimonials/'.$testimonial->image) }}" class="w-full h-full object-cover" alt="{{ $testimonial->name }}">
                     @else
-                        <img src="{{ asset('public/admin/assets/images/testimonials/no-photo1.jpg') }}" class="w-full h-full object-cover" alt="{{ $testimonial->name }}">
+                        <img src="{{ asset('/admin/assets/images/testimonials/no-photo1.jpg') }}" class="w-full h-full object-cover" alt="{{ $testimonial->name }}">
                     @endif
                 </div>
                 <div class="testi-content"> 

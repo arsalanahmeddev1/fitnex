@@ -24,12 +24,12 @@
                             <div class="col-md-4">
                                 <div class="dealz-box">
                                     <div class="dealz-box-img">
-                                        <img src="{{ asset('public/admin/assets/products/thumbnails') }}/{{$rental->thumbnail}}" alt="">
+                                        <img src="{{ asset('/admin/assets/products/thumbnails') }}/{{$rental->thumbnail}}" alt="">
                                     </div>
                                     <div class="dealz-box-content">
                                     <div class="dealz-box-heading">
                                             <h3>{{ $rental->name }}</h3>
-                                            <img src="{{ asset('public/assets/website/images/new-starz.png') }}" alt="">
+                                            <img src="{{ asset('/assets/website/images/new-starz.png') }}" alt="">
                                         </div>
                                         <div class="dealz-box-description">
                                             <p>{!! $rental->description !!}</p>
@@ -47,7 +47,7 @@
                                             @else 
                                                 <div class="other-info-deals">
                                                     <div class="pro-detailz">
-                                                        <img src="{{ asset('public/assets/website/images/car-seats.png') }}" alt="">
+                                                        <img src="{{ asset('/assets/website/images/car-seats.png') }}" alt="">
                                                         <span>{{ $rental->hasProductDetails->seats }} Seats</span>
                                                     </div>
                                                 </div>

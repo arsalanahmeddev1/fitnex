@@ -175,7 +175,7 @@
                 <div class="row invoice-1">
                     <div class="col-md-8">
                         <div class="invoice-img">
-                            <img src="{{ asset('public/assets/website/images/chef-logo.png') }}" alt="">
+                            <img src="{{ asset('/assets/website/images/chef-logo.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 for-right">

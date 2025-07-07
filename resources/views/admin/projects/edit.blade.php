@@ -361,23 +361,23 @@
                                                     </a>
                                                 @elseif($fileExtension == 'pdf')
                                                     <a href="{{ $fileUrl }}" target="_blank">
-                                                        <img src="{{ asset('public/admin/assets/icons/pdf-icon.png') }}" alt="PDF" class="file-icon">
+                                                        <img src="{{ asset('/admin/assets/icons/pdf-icon.png') }}" alt="PDF" class="file-icon">
                                                     </a>
                                                 @elseif(in_array($fileExtension, ['docx', 'doc']))
                                                     <a href="{{ $fileUrl }}" target="_blank">
-                                                        <img src="{{ asset('public/admin/assets/icons/word-icon.png') }}" alt="Word" class="file-icon">
+                                                        <img src="{{ asset('/admin/assets/icons/word-icon.png') }}" alt="Word" class="file-icon">
                                                     </a>
                                                 @elseif(in_array($fileExtension, ['xlsx', 'xls']))
                                                     <a href="{{ $fileUrl }}" target="_blank">
-                                                        <img src="{{ asset('public/admin/assets/icons/excel-icon.png') }}" alt="Excel" class="file-icon">
+                                                        <img src="{{ asset('/admin/assets/icons/excel-icon.png') }}" alt="Excel" class="file-icon">
                                                     </a>
                                                 @elseif($fileExtension == 'zip')
                                                     <a href="{{ $fileUrl }}" target="_blank">
-                                                        <img src="{{ asset('public/admin/assets/icons/zip-icon.png') }}" alt="Zip" class="file-icon">
+                                                        <img src="{{ asset('/admin/assets/icons/zip-icon.png') }}" alt="Zip" class="file-icon">
                                                     </a>
                                                 @else
                                                     <a href="{{ $fileUrl }}" target="_blank">
-                                                        <img src="{{ asset('public/admin/assets/icons/file-icon.png') }}" alt="File" class="file-icon">
+                                                        <img src="{{ asset('/admin/assets/icons/file-icon.png') }}" alt="File" class="file-icon">
                                                     </a>
                                                 @endif
                                                 <div style="font-size:12px;word-break:break-all;">{{ $file }}</div>

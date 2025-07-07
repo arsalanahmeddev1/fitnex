@@ -91,9 +91,9 @@
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         @if((Auth::user()->image))
-                        <img src="{{ asset('public/admin/assets/img') }}/{{ Auth::user()->image }}" class="user-image" alt="user photo">
+                        <img src="{{ asset('/admin/assets/img') }}/{{ Auth::user()->image }}" class="user-image" alt="user photo">
                         @else
-                        <img src="{{ asset('public/admin/assets/img/dummy-user.png') }}" class="user-image" alt="user photo">
+                        <img src="{{ asset('/admin/assets/img/dummy-user.png') }}" class="user-image" alt="user photo">
                         @endif
                         <span class="hidden-xs"></span>
                     </a>

@@ -44,35 +44,35 @@
     <div class="slider-wrapper">
       <div class="infinite-slider">
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-01.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-01.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-02.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-02.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-03.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-03.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-04.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-04.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-05.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-05.png" alt="">
         </div>
         <!-- Duplicate the content -->
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-01.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-01.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-02.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-02.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-03.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-03.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-04.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-04.png" alt="">
         </div>
         <div>
-          <img src="{{ asset('public/assets/website') }}/images/sl-md-05.png" alt="">
+          <img src="{{ asset('/assets/website') }}/images/sl-md-05.png" alt="">
         </div>
       </div>
     </div>
@@ -103,10 +103,10 @@
      data-aos-duration="1500">
         <div class="position-relative">
           <div class="img-wrapper md-shape">
-            <img src="{{ asset('public/assets/website') }}/images/about-01.png" class="" alt="our members">
+            <img src="{{ asset('/assets/website') }}/images/about-01.png" class="" alt="our members">
           </div>
           <div class="position-absolute sm-img-wrapper">
-            <img src="{{ asset('public/assets/website') }}/images/about-01.png" alt="our members">
+            <img src="{{ asset('/assets/website') }}/images/about-01.png" alt="our members">
           </div>
         </div>
       </div>

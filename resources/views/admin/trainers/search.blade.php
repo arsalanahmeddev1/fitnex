@@ -3,9 +3,9 @@
     <td>{{ $trainers->firstItem()+$key }}.</td>
     <td>
         @if($trainer->image)
-        <img src="{{ asset('public/admin/assets/images/Trainers/'.$trainer->image) }}" alt="" style="width:60px;">
+        <img src="{{ asset('/admin/assets/images/Trainers/'.$trainer->image) }}" alt="" style="width:60px;">
         @else
-        <img src="{{ asset('public/admin/assets/images/Trainers/no-photo1.jpg') }}" style="width:60px;">
+        <img src="{{ asset('/admin/assets/images/Trainers/no-photo1.jpg') }}" style="width:60px;">
         @endif
     </td>
     <td>{{ $trainer->trainer_type }}</td>

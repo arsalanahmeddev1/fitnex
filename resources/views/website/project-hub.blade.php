@@ -340,9 +340,9 @@
                         <div class="job-card">
                             <div class="job-image-container">
                                 @if ($project->image)
-                                    <img src="{{ asset('public/admin/assets/images/projects/' . $project->image) }}" class="job-image" alt="{{ $project->name }}">
+                                    <img src="{{ asset('/admin/assets/images/projects/' . $project->image) }}" class="job-image" alt="{{ $project->name }}">
                                 @else
-                                    <img src="{{ asset('public/admin/assets/images/Agents/no-photo1.jpg') }}" class="job-image" alt="Default Image">
+                                    <img src="{{ asset('/admin/assets/images/Agents/no-photo1.jpg') }}" class="job-image" alt="Default Image">
                                 @endif
                             </div>
                             <div class="job-content">

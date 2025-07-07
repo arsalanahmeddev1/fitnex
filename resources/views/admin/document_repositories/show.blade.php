@@ -325,27 +325,27 @@
                                         @elseif($fileExtension == 'pdf') 
                                             <!-- Display PDF icon -->
                                             <a href="{{ $fileUrl }}" target="_blank" class="file-link">
-                                                <img src="{{ asset('public/admin/assets/icons/pdf-icon.png') }}" alt="PDF Icon" class="file-icon">
+                                                <img src="{{ asset('/admin/assets/icons/pdf-icon.png') }}" alt="PDF Icon" class="file-icon">
                                             </a>
                                         @elseif(in_array($fileExtension, ['docx', 'doc'])) 
                                             <!-- Display Word document icon -->
                                             <a href="{{ $fileUrl }}" target="_blank" class="file-link">
-                                                <img src="{{ asset('public/admin/assets/icons/word-icon.png') }}" alt="Word Icon" class="file-icon">
+                                                <img src="{{ asset('/admin/assets/icons/word-icon.png') }}" alt="Word Icon" class="file-icon">
                                             </a>
                                         @elseif(in_array($fileExtension, ['xlsx', 'xls'])) 
                                             <!-- Display Excel file icon -->
                                             <a href="{{ $fileUrl }}" target="_blank" class="file-link">
-                                                <img src="{{ asset('public/admin/assets/icons/excel-icon.png') }}" alt="Excel Icon" class="file-icon">
+                                                <img src="{{ asset('/admin/assets/icons/excel-icon.png') }}" alt="Excel Icon" class="file-icon">
                                             </a>
                                         @elseif($fileExtension == 'zip')
                                             <!-- Display Zip file icon, user will probably download -->
                                             <a href="{{ $fileUrl }}" target="_blank" class="file-link">
-                                                <img src="{{ asset('public/admin/assets/icons/zip-icon.png') }}" alt="Zip Icon" class="file-icon">
+                                                <img src="{{ asset('/admin/assets/icons/zip-icon.png') }}" alt="Zip Icon" class="file-icon">
                                             </a>
                                         @else
                                             <!-- Display generic file icon for other file types -->
                                             <a href="{{ $fileUrl }}" target="_blank" class="file-link">
-                                                <img src="{{ asset('public/admin/assets/icons/file-icon.png') }}" alt="File Icon" class="file-icon">
+                                                <img src="{{ asset('/admin/assets/icons/file-icon.png') }}" alt="File Icon" class="file-icon">
                                             </a>
                                         @endif
                                         <p>{{ $file }}</p> <!-- Display file name -->

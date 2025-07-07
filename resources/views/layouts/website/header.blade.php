@@ -9,7 +9,7 @@
         <div class="grid grid-cols-4 lg:grid-cols-3 items-center justify-between">
             <div class="logo">
                 <a href="{{ route('index') }}">
-                    <img src="{{ asset('public/admin/assets/images/page') }}/{{ $home_page_data['header_logo'] }}" alt="logo">
+                    <img src="{{ asset('/admin/assets/images/page') }}/{{ $home_page_data['header_logo'] }}" alt="logo">
                 </a>
             </div>
             <div class="">

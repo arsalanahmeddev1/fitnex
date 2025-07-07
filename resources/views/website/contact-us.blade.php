@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="img-wrapper">
-                        <img src="{{ asset('public/admin/assets/images/page') }}/{{ $home_page_data['contact_image'] }}" alt="contact">
+                        <img src="{{ asset('/admin/assets/images/page') }}/{{ $home_page_data['contact_image'] }}" alt="contact">
                     </div>
                 </div>
             </div>

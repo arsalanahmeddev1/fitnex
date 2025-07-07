@@ -16,7 +16,7 @@
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-x-12 items-center">
             <div class="lg:col-span-2 trainer-image-box" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{ asset('public/admin/assets/images/trainers/'.$trainer->image) }}" alt="{{ $trainer->name }}" class="rounded-lg trainer-details-img">
+                <img src="{{ asset('/admin/assets/images/trainers/'.$trainer->image) }}" alt="{{ $trainer->name }}" class="rounded-lg trainer-details-img">
             </div>
             <div class="lg:col-span-3 trainer-info-box" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
                 <h2 class="text-4xl font-bold font-secondary">{{ $trainer->name }}</h2>
