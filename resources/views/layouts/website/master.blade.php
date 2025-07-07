@@ -28,10 +28,8 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['public/assets/website/css/style.css', 'public/assets/website/js/main.js'])
+        @vite(['resources/css/style.css', 'resources/js/app.js'])
         @endif
-        <link rel="stylesheet" href="{{ asset('public/assets/website/css/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('public/build/assets/app-BuMiuAPH.css') }}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     
@@ -49,8 +47,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script src="{{ asset('public/assets/website/js/main.js') }}"></script>
-        <script src="{{ asset('public/build/assets/app-DNxiirP_.js') }}"></script>
+        <script src="{{ asset('public/assets/website/js/main.js') }}"></script> 
         @yield('script')
     </body>
 </html>
