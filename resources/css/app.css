@@ -454,7 +454,10 @@ body {
 .our-services-item img {
     @apply object-cover;
 }
-
+.testi-content,
+.testimonial-item img {
+    @apply max-h-[310px];
+}
 /* responsive */
 @media (max-width: 1440px) {
     .fitness-journey-slider .slick-next {
