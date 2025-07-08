@@ -8,6 +8,7 @@ use App\Models\Page;
 use App\Models\PageSetting;
 use Session;
 use Auth;
+use File;
 
 class PageSettingController extends Controller
 {
@@ -37,7 +38,7 @@ class PageSettingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    /* public function store(Request $request)
     {
         $model = PageSetting::where('parent_slug', $request->parent_slug)->first();
         if(empty($model)){
@@ -92,6 +93,28 @@ class PageSettingController extends Controller
             Session::flash('message', 'Setting updated successfully!');
             return redirect()->back();
         }
+    } */
+    public function store(Request $request)
+    {
+        $parentSlug = $request->parent_slug;
+        $existingSettings = PageSetting::where('parent_slug', $parentSlug)->pluck('id', 'key')->toArray();
+
+        foreach ($request->except('_token') as $key => $value) {
+            $finalValue = $this->handleValue($value);
+
+            if (isset($existingSettings[$key])) {
+                PageSetting::where('id', $existingSettings[$key])->update(['value' => $finalValue]);
+            } else {
+                PageSetting::create([
+                    'parent_slug' => $parentSlug,
+                    'key' => $key,
+                    'value' => $finalValue,
+                ]);
+            }
+        }
+
+        Session::flash('message', isset($existingSettings) && count($existingSettings) > 0 ? 'Setting updated successfully!' : 'Setting added successfully!');
+        return redirect()->back();
     }
 
     /**
@@ -130,6 +153,22 @@ class PageSettingController extends Controller
         }
     }
 
+    private function handleValue($value)
+    {
+        if ($value instanceof \Illuminate\Http\UploadedFile) {
+            $imageName = date('dmYHis') . '.' . $value->getClientOriginalExtension();
+            $uploadPath = public_path('/admin/assets/images/page');
+
+            if (!File::exists($uploadPath)) {
+                File::makeDirectory($uploadPath, 0755, true);
+            }
+
+            $value->move($uploadPath, $imageName);
+            return $imageName;
+        }
+
+        return is_array($value) ? json_encode($value) : $value;
+    }
     /**
      * Show the form for editing the specified resource.
      *
