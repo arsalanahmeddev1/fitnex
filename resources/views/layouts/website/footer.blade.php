@@ -7,7 +7,8 @@
         >
             <div class="mx-auto col-span-2">
                 <div class="footer-logo">
-                    <img src="{{ asset('/admin/assets/images/page') }}/{{ $home_page_data['footer_image'] }}" class="footer-logo" alt="footer-logo">
+                    <!-- <img src="{{ asset('/admin/assets/images/page') }}/{{ $home_page_data['footer_image'] }}" class="footer-logo" alt="footer-logo"> -->
+                    <img src="{{ asset('/admin/assets/images/page/08072025173024.png') }}" alt="logo">
                 </div>
                 <div class="para para-white">
                     {!! $home_page_data['footer_description'] !!} 

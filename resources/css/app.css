@@ -251,11 +251,8 @@ body {
 }
 
 .primary-navs a.active {
-    color: #ffffff;
-    background-color: #0079d4;
-    padding: 5px 10px 5px 10px;
-    border-radius: 5px;
-    border: solid #0079d4;
+    color: #0079d4;
+    font-weight: 800;
 }
 
 .primary-navs select {
