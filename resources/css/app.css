@@ -132,7 +132,7 @@ body {
 }
 
 .testi-content {
-    @apply bg-[#121212] px-[20px] py-[30px];
+    @apply bg-[#121212] px-[20px] py-[30px] min-h-[310px];
 }
 
 .stars i {
