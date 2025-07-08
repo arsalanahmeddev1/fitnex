@@ -71,7 +71,7 @@ class TrainerController extends Controller
 
         if(isset($request->image)){
             $photo=date('y-m-d-His').'.'.$request->file('image')->getClientOriginalExtension();
-            $request->image->move(public_path('/var/www/html/fitnex/public/admin/assets/images/Trainers'), $photo);
+            $request->image->move(public_path('/admin/assets/images/Trainers'), $photo);
             $trainers->image=$photo;
         }
 
@@ -125,7 +125,7 @@ class TrainerController extends Controller
         $updates = Trainer::where('id' , $id)->first();
         if (isset($request->image)) {
             $photo = date('d-m-Y-His').'.'.$request->file('image')->getClientOriginalExtension();
-            $Image = $request->image->move(public_path('/var/www/html/fitnex/public/admin/assets/images/Trainers'), $photo);
+            $Image = $request->image->move(public_path('/admin/assets/images/Trainers'), $photo);
             $updates->image = $photo;
         }
 

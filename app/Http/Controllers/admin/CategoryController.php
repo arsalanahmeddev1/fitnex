@@ -71,7 +71,7 @@ class CategoryController extends Controller
 		
 		if (isset($request->image)) {
             $photo = date('YmdHis').'.'.$request->file('image')->getClientOriginalExtension();
-            $request->image->move(public_path('/var/www/html/fitnex/public/admin/assets/images/services'), $photo);
+            $request->image->move(public_path('/admin/assets/images/services'), $photo);
             $model->image = $photo;
         }
 		/* $parent_id = $request->parent_id;
@@ -132,7 +132,7 @@ class CategoryController extends Controller
 		
 		if (isset($request->image)) {
             $photo = date('YmdHis').'.'.$request->file('image')->getClientOriginalExtension();
-            $request->image->move(public_path('/var/www/html/fitnex/public/admin/assets/images/services'), $photo);
+            $request->image->move(public_path('/admin/assets/images/services'), $photo);
             $update->image = $photo;
         }
         
