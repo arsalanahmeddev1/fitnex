@@ -448,7 +448,9 @@ body {
     @apply text-[36px] font-black mb-[20px] uppercase;
     color: var(--primary-theme);
 }
-
+.our-services-item img {
+    @apply object-cover;
+}
 
 /* responsive */
 @media (max-width: 1440px) {
