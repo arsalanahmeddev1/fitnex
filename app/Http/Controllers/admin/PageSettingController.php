@@ -47,7 +47,7 @@ class PageSettingController extends Controller
                 if(gettype($obj)!='array' && gettype($obj)!='string' && !empty($obj)){
                     $file = $obj;
                     $image = date('dmYHis').'.'.$file->getClientOriginalExtension();
-                    $file->move(public_path('/admin/assets/images/page'), $image);
+                    $file->move(public_path('/var/www/html/fitnex/public/admin/assets/images/page'), $image);
                     $obj = $image;
                 }
 
@@ -68,7 +68,7 @@ class PageSettingController extends Controller
                     if(gettype($obj)!='array' && gettype($obj)!='string' && !empty($obj)){
                         $file = $obj;
                         $image = date('dmYHis').'.'.$file->getClientOriginalExtension();
-                        $file->move(public_path('/admin/assets/images/page'), $image);
+                        $file->move(public_path('/var/www/html/fitnex/public/admin/assets/images/page'), $image);
                         $obj = $image;
                     }
 
@@ -78,7 +78,7 @@ class PageSettingController extends Controller
                     if(gettype($obj)!='array' && gettype($obj)!='string' && !empty($obj)){
                         $file = $obj;
                         $image = date('dmYHis').'.'.$file->getClientOriginalExtension();
-                        $file->move(public_path('/admin/assets/images/page'), $image);
+                        $file->move(public_path('/var/www/html/fitnex/public/admin/assets/images/page'), $image);
                         $obj = $image;
                     }
 

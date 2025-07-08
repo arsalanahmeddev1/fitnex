@@ -74,7 +74,7 @@ class HomeSliderController extends Controller
 
         if (isset($request->image)) {
             $photo = date('d-m-Y-His').'.'.$request->file('image')->getClientOriginalExtension();
-            $request->image->move(public_path('/admin/assets/images/HomeSlider'), $photo);
+            $request->image->move(public_path('/var/www/html/fitnex/public/admin/assets/images/HomeSlider'), $photo);
             $homeSlider->image = $photo;
         }
 
@@ -129,7 +129,7 @@ class HomeSliderController extends Controller
 
         if (isset($request->image)) {
             $photo = date('d-m-Y-His').'.'.$request->file('image')->getClientOriginalExtension();
-            $Image = $request->image->move(public_path('/admin/assets/images/HomeSlider'), $photo);
+            $Image = $request->image->move(public_path('/var/www/html/fitnex/public/admin/assets/images/HomeSlider'), $photo);
             $update->image = $photo;
         }
 
