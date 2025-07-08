@@ -153,7 +153,7 @@
             data-aos="flip-right"
             data-aos-easing="linear"
             data-aos-duration="1500">
-            let's us Transform Your
+            let's Transform Your
             Fitness Journey
         </h2>
         <p class="para text-center max-w-[490px] mx-auto para-white mb-[80px]"
