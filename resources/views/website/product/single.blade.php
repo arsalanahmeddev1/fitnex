@@ -23,7 +23,7 @@
 				<div class="col-md-12 slider">
 				    @foreach($product->hasProductImages as $key=>$image)
                         <div class="item active">
-                            <img class="carousel-image" src="{{ asset('public/admin/assets/products/images') }}/{{ $image->image }}" alt="banner 1">
+                            <img class="carousel-image" src="{{asset('/admin/assets/products/images') }}/{{ $image->image }}" alt="banner 1">
                         </div>
                     @endforeach
 				</div>

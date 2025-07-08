@@ -5,7 +5,7 @@
 <section class="hero-banner swiper">
     <div class="swiper-wrapper">
         @foreach ($homesliders as $homeslider) 
-        <div class="swiper-slide h-full flex items-center justify-center" style="background: url('{{ asset('public/admin/assets/images/HomeSlider/' . ($homeslider->image ? $homeslider->image : 'no-photo1.jpg')) }}') no-repeat top/cover;">
+        <div class="swiper-slide h-full flex items-center justify-center" style="background: url('{{ asset('/admin/assets/images/HomeSlider/' . ($homeslider->image ? $homeslider->image : 'no-photo1.jpg')) }}') no-repeat top/cover;">
             <div class="container">
                 <div class="flex justify-center items-center flex-col text-center py-[200px]">
                     @if($homeslider->title) 
@@ -225,7 +225,7 @@
                 data-aos-easing="linear"
                 data-aos-duration="1500">
                 @if(isset($home_page_data['home_about_image']) && $home_page_data['home_about_image'] != '')
-                    <img src="{{ asset('/public/admin/assets/images/page/'.$home_page_data['home_about_image']) }}" class="" alt="">
+                    <img src="{{ asset('/admin/assets/images/page/'.$home_page_data['home_about_image']) }}" class="" alt="">
                 @else
                     <img src="{{ asset('/assets/website/images/about-sec-right.png') }}" class="" alt="">
                 @endif
@@ -336,7 +336,7 @@
         
     </div>
 </section>
-<section class="form-sec py-[50px] md:py-[100px]" style="background: url('{{ asset('public/assets/website/images/form-sec-bg.png') }}') no-repeat top/cover;">
+<section class="form-sec py-[50px] md:py-[100px]" style="background: url('{{ asset('/assets/website/images/form-sec-bg.png') }}') no-repeat top/cover;">
     <div class="container">
         <div class="bg-black py-[100px] px-[10px] lg:px-[150px]">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[20px]">

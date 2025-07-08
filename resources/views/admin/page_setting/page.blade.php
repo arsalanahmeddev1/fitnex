@@ -216,7 +216,7 @@
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label">Existing Image</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="{{ asset('/public/admin/assets/images/page/'.$view->home_welcome_image_bg) }}" class="existing-photo" style="height:180px;">
+                                            <img src="{{ asset('/admin/assets/images/page/'.$view->home_welcome_image_bg) }}" class="existing-photo" style="height:180px;">
                                         </div>
                                     </div>
                                 @endif`
@@ -273,7 +273,7 @@
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label">Existing Image</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="{{ asset('/public/admin/assets/images/page/'.$view->counter_photo) }}" class="existing-photo" style="height:180px;">
+                                            <img src="{{ asset('/admin/assets/images/page/'.$view->counter_photo) }}" class="existing-photo" style="height:180px;">
                                         </div>
                                     </div>
                                 @endif
@@ -375,7 +375,7 @@
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label">Existing Photo</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="{{ asset('/public/admin/assets/images/page/'.$view->home_booking_photo) }}" class="" existing-photo="" style=" height:180px;">
+                                            <img src="{{ asset('/admin/assets/images/page/'.$view->home_booking_photo) }}" class="" existing-photo="" style=" height:180px;">
                                         </div>
                                     </div>
                                 @endif

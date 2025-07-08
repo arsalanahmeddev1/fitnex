@@ -58,7 +58,7 @@
                             @if(isset($page_data['contact_image']))
                                 <div class="form-group">
                                     <div class="col-sm-4">
-                                        <img src="{{ asset('/public/admin/assets/images/page/'.$page_data['contact_image']) }}" class="existing-photo" style="width: 100px;">
+                                        <img src="{{ asset('/admin/assets/images/page/'.$page_data['contact_image']) }}" class="existing-photo" style="width: 100px;">
                                     </div>
                                 </div>
                             @endif

@@ -2,7 +2,7 @@
 @section('title', $page_title)
 @section('content')
 
-<section class="inner-banner listing-banner" style="background: url(' {{ asset('public/assets/website/images/trainer-banner.webp') }}') no-repeat center/cover;">
+<section class="inner-banner listing-banner" style="background: url(' {{ asset('/assets/website/images/trainer-banner.webp') }}') no-repeat center/cover;">
     <div class="container">
         <h1 class="relative mx-auto text-[50px] text-white font-bold leading-[1.1] lg:max-w-[680px] xxl:max-w-[860px] k+pfr5Wx@I8MPO@UuY'2"
             data-aos="flip-right"

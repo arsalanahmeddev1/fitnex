@@ -38,7 +38,7 @@
                                 <span style="color: red">{{ $errors->first('home_about_image') }}</span>
                             </div>
 							<div class="col-sm-4" >
-								<img style="width: 80px" id="banner_preview" src="{{ asset('/public/admin/assets/images/page/'.$page_data['home_about_image']) }}" alt="Image Not Found ">
+								<img style="width: 80px" id="banner_preview" src="{{ asset('/admin/assets/images/page/'.$page_data['home_about_image']) }}" alt="Image Not Found ">
 							</div>
                         </div>
 

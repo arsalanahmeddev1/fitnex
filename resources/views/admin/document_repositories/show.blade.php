@@ -275,7 +275,7 @@
 
 <section class="content">
     <div class="container">
-        <img class="back-image" src="{{ asset('public/admin/assets/images') }}/main-logo.png" alt="">
+        <img class="back-image" src="{{asset('/admin/assets/images') }}/main-logo.png" alt="">
         <h4 class="main" style="text-align: center;">DOCUMENT DETAILS</h4>
         <hr>
 
@@ -313,7 +313,7 @@
                                         $fileExtension = pathinfo($file, PATHINFO_EXTENSION);
                                         
                                         // Define the file URL for storage in the public directory
-                                        $fileUrl = asset('public/admin/assets/images/documents/' . $file);
+                                        $fileUrl =asset('/admin/assets/images/documents/' . $file);
                                     @endphp
 
                                     <div class="file-item">

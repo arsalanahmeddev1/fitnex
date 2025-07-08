@@ -26,7 +26,7 @@
                             @if(isset($page_data['footer_image']))
                                 <div class="form-group">
                                     <div class="col-sm-4">
-                                        <img src="{{ asset('/public/admin/assets/images/page/'.$page_data['footer_image']) }}" class="existing-photo">
+                                        <img src="{{ asset('/admin/assets/images/page/'.$page_data['footer_image']) }}" class="existing-photo">
                                     </div>
                                 </div>
                             @endif

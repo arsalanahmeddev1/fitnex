@@ -356,7 +356,7 @@
                         @foreach(json_decode($project->document_file) as $file)
                             @php
                                 $fileExtension = pathinfo($file, PATHINFO_EXTENSION);
-                                $fileUrl = asset('public/admin/assets/images/documents/' . $file);
+                                $fileUrl =asset('/admin/assets/images/documents/' . $file);
                             @endphp
                             <div class="file-item" id="remove-{{ $file }}">
                                {{--  <span class="remove-file" onclick="removeFile('{{ $file }}')" title="Remove">

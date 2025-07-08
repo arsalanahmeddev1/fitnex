@@ -27,7 +27,7 @@
                             @if(isset($page_data['header_favicon']))
                                 <div class="form-group">
                                     <div class="col-sm-4">
-                                        <img src="{{ asset('/public/admin/assets/images/page/'.$page_data['header_favicon']) }}" class="existing-photo" style="height:50px;">
+                                        <img src="{{ asset('/admin/assets/images/page/'.$page_data['header_favicon']) }}" class="existing-photo" style="height:50px;">
                                     </div>
                                 </div>
                             @endif
@@ -40,7 +40,7 @@
                             @if(isset($page_data['header_logo']))
                                 <div class="form-group">
                                     <div class="col-sm-4">
-                                        <img src="{{ asset('/public/admin/assets/images/page/'.$page_data['header_logo']) }}" class="existing-photo" style="height:100px;">
+                                        <img src="{{ asset('/admin/assets/images/page/'.$page_data['header_logo']) }}" class="existing-photo" style="height:100px;">
                                     </div>
                                 </div>
                             @endif

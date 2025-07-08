@@ -80,7 +80,7 @@
                                             <div class="form-group">
                                                 <label for="" class="col-sm-2 control-label">Existing Photo</label>
                                                 <div class="col-sm-6" style="padding-top:6px;">
-                                                    <img src="{{ asset('/public/admin/assets/img/'.$view->photo_favicon) }}" class="existing-photo" style="height:40px;">
+                                                    <img src="{{ asset('/admin/assets/img/'.$view->photo_favicon) }}" class="existing-photo" style="height:40px;">
                                                 </div>
                                             </div>
                                             <div class="form-group">

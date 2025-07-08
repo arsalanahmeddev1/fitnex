@@ -18,8 +18,8 @@
                         <div class="close-icon">
                             <i class="fa-solid fa-xmark menu-toggle"></i>
                         </div>
-                        <li><a href="{{ route('index') }}">Home</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="{{ route('index') }}" class="{{ request()->routeIs('index') ? 'active' : '' }}">Home</a></li>
+                        <li><a href="#" class="{{ request()->routeIs('about-us') ? 'active' : '' }}">About us</a></li>
                         {{-- <li>
                             <select class="block w-full focus:outline-none">
                                 <option value="" selected>Services</option>
@@ -29,9 +29,9 @@
                             </select>
                         </li>  --}}
 
-                        <li><a href="{{ route('trainers') }}">Trainers</a></li>
+                        <li><a href="{{ route('trainers') }}" class="{{ request()->routeIs('trainers') ? 'active' : '' }}">Trainers</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#" class="{{ request()->routeIs('contact-us') ? 'active' : '' }}">Contact us</a></li>
                     </ul>
                 </nav>
             </div>

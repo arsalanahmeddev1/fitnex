@@ -8,9 +8,9 @@
 </style>
 	<!-- banner sec -->
     @if(!empty($banner->image))
-        <section class="agent-inner-banner" style="background-image: url('{{ asset('public/admin/assets/images/banner') }}/{{ $banner->image }}');">
+        <section class="agent-inner-banner" style="background-image: url('{{asset('/admin/assets/images/banner') }}/{{ $banner->image }}');">
     @else
-        <section class="agent-inner-banner" style="background-image: url('{{ asset('public/admin/assets/images/images.png') }}');"style="width:100%">
+        <section class="agent-inner-banner" style="background-image: url('{{asset('/admin/assets/images/images.png') }}');"style="width:100%">
     @endif
 		<div class="container">
             <div class="row">

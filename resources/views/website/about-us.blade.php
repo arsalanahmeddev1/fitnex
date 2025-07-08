@@ -2,9 +2,9 @@
 @section('title', $page_title)
 @section('content')
 @if(!empty($banner->image))
-<section class="inner-banner about-banner" style="background-image: url('{{ asset('public/admin/assets/images/banner') }}/{{ $banner->image }}');"> 
+<section class="inner-banner about-banner" style="background-image: url('{{asset('/admin/assets/images/banner') }}/{{ $banner->image }}');"> 
 @else
-<section class="inner-banner about-banner" style="background-image: url('{{ asset('public/admin/assets/images/images.png') }}');" style="width:100%">
+<section class="inner-banner about-banner" style="background-image: url('{{asset('/admin/assets/images/images.png') }}');" style="width:100%">
 @endif
   <div class="banner-wrapper position-relative z-1">
     <div class="container">
@@ -45,7 +45,7 @@
       data-aos-easing="linear"
       data-aos-duration="1500">
       <div class="img-wrapper md-shape">
-        <img src="{{ asset('/public/admin/assets/images/page/'.$home_page_data['about_us_image']) }}" class="" alt="">
+        <img src="{{ asset('/admin/assets/images/page/'.$home_page_data['about_us_image']) }}" class="" alt="">
         </div>
       </div>
     </div>

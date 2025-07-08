@@ -223,7 +223,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <img style="width: 80px" id="banner_preview"
-                                    src="{{ !empty($project->image) ? asset('public/admin/assets/images/projects/' . $project->image) : asset('public/admin/assets/images/default.jpg') }}"
+                                    src="{{ !empty($project->image) ?asset('/admin/assets/images/projects/' . $project->image) :asset('/admin/assets/images/default.jpg') }}"
                                     alt="Image Preview">
                             </div>
                         </div>
@@ -348,7 +348,7 @@
                                         @foreach(json_decode($project->document_file) as $file)
                                             @php
                                                 $fileExtension = pathinfo($file, PATHINFO_EXTENSION);
-                                                $fileUrl = asset('public/admin/assets/images/documents/' . $file);
+                                                $fileUrl =asset('/admin/assets/images/documents/' . $file);
                                             @endphp
                                             <div class="file-item" id="remove-{{ $file }}">
                                                 <span class="remove-file" onclick="removeFile('{{ $file }}')" title="Remove">

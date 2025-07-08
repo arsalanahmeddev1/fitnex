@@ -3,10 +3,10 @@
 @section('content')
     @if (!empty($banner->image))
         <section class="inner-banner events-banner"
-            style="background-image: url('{{ asset('public/admin/assets/images/banner') }}/{{ $banner->image }}');">
+            style="background-image: url('{{asset('/admin/assets/images/banner') }}/{{ $banner->image }}');">
         @else
             <section class="inner-banner events-banner"
-                style="background-image: url('{{ asset('public/admin/assets/images/images.png') }}');" style="width:100%">
+                style="background-image: url('{{asset('/admin/assets/images/images.png') }}');" style="width:100%">
     @endif
     <div class="banner-wrapper position-relative z-1">
         <div class="container">
