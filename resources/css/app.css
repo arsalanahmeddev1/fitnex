@@ -221,7 +221,7 @@ body {
     /* Slight scale for active images */
     transition: transform 0.3s ease-in-out;
 }
-
+.testimonials-slider .slick-dots,
 .fitness-journey-slider .slick-dots {
     background: rgba(207, 189, 189, 0.12);
     border-radius: 16px;
@@ -234,18 +234,24 @@ body {
     margin: 0 auto;
     bottom: 25px;
 }
-
+.testimonials-slider .slick-dots li button:before,
 .fitness-journey-slider .slick-dots li button:before {
     opacity: .25;
     font-size: 16px;
     color: #fff;
 }
-
+.testimonials-slider .slick-dots li.slick-active button:before,
 .fitness-journey-slider .slick-dots li.slick-active button:before {
     font-size: 16px;
     opacity: 1;
 }
-
+.testimonials-slider .slick-dots {
+    bottom: -55px;
+}
+.testimonials-slider .slick-dots li.slick-active button:before,
+.testimonials-slider .slick-dots li button:before {
+    font-size: 12px;
+}
 .primary-nav a {
     color: var(--para-white);
 }

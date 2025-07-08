@@ -28,9 +28,9 @@ $(document).ready(function () {
 
 
     $('.testimonials-slider').slick({
-        dots: true,
         infinite: true,
         autoplay: true,
+        dots: true,
         autoplaySpeed: 4000,
         speed: 300,
         slidesToShow: 2,
